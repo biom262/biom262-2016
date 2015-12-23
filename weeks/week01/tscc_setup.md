@@ -62,6 +62,11 @@ and even final results/papers!  Do not store actual data in your home
 directory as is is limited to 100 GB only.
 
 
+* `~/code/` 
+    * Anything that is a GitHub repository goes here. Thus, since all of your code will be in Github Repos, all of your code should go here, too :)
+* `~/projects/`
+    * Project-specific files like manifests, submission scripts, links to data
+
 
 Link your scratch directory to your home
 ++++++++++++++++++++++++++++++++++++++++
