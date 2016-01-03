@@ -1,0 +1,10 @@
+language: node_js
+node:
+  - "5.3"
+install:
+  - npm install wintersmith
+script:
+  - cd website
+  - wintersmith build
+after_success:
+  - bash deploy.sh
