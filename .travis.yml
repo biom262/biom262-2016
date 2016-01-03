@@ -6,7 +6,7 @@ install:
 script:
 - cd website
 - wintersmith --help
-- ls
+- ls -lha
 - wintersmith build
 after_success:
 - bash deploy.sh
