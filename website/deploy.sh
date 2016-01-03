@@ -17,7 +17,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     #go into directory and copy data we're interested in to that directory
     cd built_website
     git init
-    git pull https://${GH_TOKEN}@github.com/$TARGET_REPO $BRANCH> /dev/null
+    git pull https://${GIT_TOKEN}@github.com/$TARGET_REPO $BRANCH> /dev/null
     rsync -rv --exclude=.git  ../$OUTPUT_FOLDER/* .
     cp ../CNAME .
     # Prevent Github's Jekyll builder from getting run
@@ -25,6 +25,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     #add, commit and push files
     git add -f .
     git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to Github Pages"
-    git push -f https://${GH_TOKEN}@github.com/$TARGET_REPO master:$BRANCH > /dev/null
+    git push -f https://${GIT_TOKEN}@github.com/$TARGET_REPO master:$BRANCH > /dev/null
     echo -e "Deploy completed\n"
 fi
