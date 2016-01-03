@@ -4,7 +4,8 @@ node_js:
 install:
 - npm install -g wintersmith
 script:
-- wintersmith build --chdir website
+- cd website
+- wintersmith build
 after_success:
 - bash deploy.sh
 env:
