@@ -12,9 +12,9 @@ html(lang='en')
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Raleway:400,300,600|family=PT+Sans:400,300,600')
-      link(rel='stylesheet', href=locals.url+'/'+contents.css['normalize.css'].url)
-      link(rel='stylesheet', href=locals.url+'/'+contents.css['skeleton.css'].url)
-      link(rel='stylesheet', href=locals.url+'/'+contents.css['main.css'].url)
+      link(rel='stylesheet', href=locals.url+contents.css['normalize.css'].url)
+      link(rel='stylesheet', href=locals.url+contents.css['skeleton.css'].url)
+      link(rel='stylesheet', href=locals.url+contents.css['main.css'].url)
   body(class=bodyclass)
     header.header
       div.content-wrap
