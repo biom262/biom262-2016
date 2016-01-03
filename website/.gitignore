@@ -1,0 +1,5 @@
+# Ignore the built website
+build/
+
+# Emacs files
+*~
