@@ -5,8 +5,6 @@ install:
 - npm install -g wintersmith
 script:
 - cd website
-- wintersmith --help
-- ls -lha
 - wintersmith build
 after_success:
 - bash deploy.sh
