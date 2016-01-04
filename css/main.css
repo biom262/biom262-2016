@@ -382,18 +382,10 @@ code.lang-markdown .bullet {
 @media (min-width: 1600px) {
   body { font-size: 26px; }
 
-  .syllabus{
-    font-size: 14px;
-  }
-
 }
 
 @media (max-width: 900px) {
   body { font-size: 18px; }
-
-  .syllabus{
-    font-size: 12px;
-  }
 
 }
 
@@ -401,10 +393,6 @@ code.lang-markdown .bullet {
   .content-wrap {
     width: auto;
     padding: 0 1em;
-  }
-
-  .syllabus{
-    font-size: 10px;
   }
 
   .header {
@@ -449,4 +437,8 @@ code.lang-markdown .bullet {
     margin-bottom: 1em;
   }
 
+}
+
+.syllabus{
+  font-size: 14px;
 }
