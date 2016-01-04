@@ -381,10 +381,18 @@ code.lang-markdown .bullet {
 
 @media (min-width: 1600px) {
   body { font-size: 26px; }
+  .syllabus{
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 900px) {
   body { font-size: 18px; }
+  .syllabus{
+    font-size: 12px;
+  }
+
 }
 
 @media (max-width: 690px) {
@@ -434,24 +442,9 @@ code.lang-markdown .bullet {
   footer .about p {
     margin-bottom: 1em;
   }
-}
 
-table, th, td, thead, tbody {
-  font-size: 14px;
-}
+  .syllabus{
+    font-size: 10px;
+  }
 
-td{
-	padding:7px; border:#4e95f4 1px solid;
-}
-/* provide some minimal visual accomodation for IE8 and below */
-tr{
-	background: #b8d1f3;
-}
-/*  Define the background color for all the ODD background rows  */
-tr:nth-child(odd){
-	background: #b8d1f3;
-}
-/*  Define the background color for all the EVEN background rows  */
-tr:nth-child(even){
-	background: #dae5f4;
 }
