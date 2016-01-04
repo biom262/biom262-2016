@@ -3,9 +3,6 @@ h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
   margin: 0; padding: 0; border: 0;
 }
 
-table {
-  font-size: 14px;
-}
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -395,6 +392,7 @@ code.lang-markdown .bullet {
     width: auto;
     padding: 0 1em;
   }
+
   .header {
     margin: 1em 0;
   }
@@ -436,4 +434,24 @@ code.lang-markdown .bullet {
   footer .about p {
     margin-bottom: 1em;
   }
+}
+
+table, th, td, thead, tbody {
+  font-size: 14px;
+}
+
+td{
+	padding:7px; border:#4e95f4 1px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+tr{
+	background: #b8d1f3;
+}
+/*  Define the background color for all the ODD background rows  */
+tr:nth-child(odd){
+	background: #b8d1f3;
+}
+/*  Define the background color for all the EVEN background rows  */
+tr:nth-child(even){
+	background: #dae5f4;
 }
