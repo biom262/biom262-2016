@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "http://biom262.github.io/biom262-2016",
-    "name": "BIOM262 Winter 2016",
+    "name": "Quantitative Methods in Genetics and Genomics",
     "owner": "Olga Botvinnik",
-    "description": "Quantitative Methods in Genetics"
+    "description": "University of California San Diego (UCSD)\nCMM262/BIOM262/BGGN237\nWinter 2016"
   },
   "plugins": [
     "./plugins/paginator.coffee"
