@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BIOM262 Winter 2016</title>
+    <title>Quantitative Methods in Genetics and Genomics</title>
     <atom:link href="http://biom262.github.io/biom262-2016/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://biom262.github.io/biom262-2016</link>
-    <description>Quantitative Methods in Genetics</description>
+    <description>University of California San Diego (UCSD)
+CMM262/BIOM262/BGGN237
+Winter 2016</description>
     <pubDate>Tue, 30 Apr 2013 00:00:00 +0000</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
