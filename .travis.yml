@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '5.3'
 install:
+- npm install -g jstransformer-marked
 - npm install -g wintersmith
 script:
 - cd website
