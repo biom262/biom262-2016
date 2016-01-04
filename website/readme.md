@@ -17,7 +17,7 @@ And to build it, do
 wintersmith build
 ```
 
-To view it at http://localhost:8080, do:
+To view it at [http://localhost:8080](http://localhost:8080), do:
 
 ```
 wintersmith preview
