@@ -26,7 +26,17 @@ wintersmith preview
 
 ## Editing the website
 
-The main file is `templates/index.jade`, which is written in the [jade](http://jade-lang.com/) template engine. The layout/base for the page is specified in `templates/layout.jade`.
+### Main page (`index.html`)
+
+The main file is `templates/index.jade`, which is written in the [jade](http://jade-lang.com/) template engine.
+
+### Layout/base
+
+The layout/base for the page is specified in `templates/layout.jade`.
+
+### Footer
+
+The footer is edited in `contents/about.md`.
 
 ### Note about CSS
 
