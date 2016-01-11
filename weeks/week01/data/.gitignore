@@ -1,0 +1,7 @@
+# Ignore the files that are the solutions to the questions
+gencode.v19.annotation.chr22.transcript.gtf
+gencode.v19.annotation.chr22.transcript.promoter.gtf
+gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf 
+gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
+tf.bed
+tf.nfkb.bed

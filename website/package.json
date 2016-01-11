@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "moment": "2.3.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x",
+    "jstransformer-marked": "0.1.x",
+  },
+  "private": "true"
+}
