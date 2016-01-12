@@ -1,3 +1,5 @@
+
+
 cd ~/code/biom262-2016/weeks/week01/data
 
 %%bash --out exercise1
@@ -72,3 +74,5 @@ echo '--- Last 10 lines ---'
 tail gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
 
 print(exercise5)
+
+echo "Hello I am a message in standard out (stdout)"
