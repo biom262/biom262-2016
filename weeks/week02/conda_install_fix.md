@@ -1,4 +1,4 @@
-# `conda install whywontyouinstall` issues
+# `conda install prettypleaseinstallwhywontyouinstallihateverything` issues
 
 There's been some update to Anaconda which has messed up in the R installation, and you've probably seen an error message like this:
 
