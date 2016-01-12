@@ -1,4 +1,13 @@
-
+#!/bin/csh
+#PBS -q hotel
+#PBS -N tf_binding
+#PBS -l nodes=1:ppn=3
+#PBS -l walltime=0:10:00
+#PBS -o tf_binding_output_file.o
+#PBS -e tf_binding_error_file.e
+#PBS -V
+#PBS -M bvtsu@ucsd.edu
+#PBS -m abe
 
 cd ~/code/biom262-2016/weeks/week01/data
 
