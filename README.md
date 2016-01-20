@@ -2,7 +2,7 @@
 
 
 # Quantitative Methods in Genetics and Genomics
-
+# check
 
 
 CMM262/BIOM262/BGGN237 Winter 2016
