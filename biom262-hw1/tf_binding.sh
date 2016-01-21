@@ -1,8 +1,8 @@
-
+1
 cd ~/code/biom262-2016/weeks/week01/biom262-hw1/
 Script:
 echo "Number of lines for the following working files (stdout)"
-grep -i 'NFKB' $PWD/tfbed.txt >tf.nfkb.bed
+grep -i 'NFKB' tfbed.txt >tf.nfkb.bed
 wc -l tf.nfkb.bed "(stdout)"   
 grep -i -w 'transcript' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf
 wc -l gencode.v19.annotation.chr22.transcript.gtf "(stdout)"
