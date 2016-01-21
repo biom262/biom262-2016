@@ -1,2 +1,0 @@
-awk: (FILENAME=gencode.v19.annotation.chr22.transcript.gtf FNR=363) fatal: print to "standard output" failed (Broken pipe)
-Missing name for redirect.
