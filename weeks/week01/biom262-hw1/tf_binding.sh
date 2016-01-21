@@ -1,9 +1,10 @@
 #!/bin/csh
 #PBS -q hotel
 #PBS -N tf_binding.sh
-<<<<<<< HEAD
 #PBS -l nodes=1:ppn=1
 #PBS -l walltime=0:05:00
+#PBS -e tf_binding_error.e
+#PBS -o tf_binding_output.o
 #PBS -V
 #PBS -M arguziko@ucsd.edu,abanisad@ucsd.edu
 #PBS -m abe
@@ -11,12 +12,12 @@ cd ~/code/biom262-2016/weeks/week01/data/
 
 echo "Hello I am a message in standard out (stdout)"
 
-echo "Hello I am a message in standard error (stderr)" >&2
+echo "Hello I am a message in standard error (stderr)" > &2
 
 
 ## Exercise 1
 
-cat tf.bed | awk '{if ($4 == "NFKB") print$0}' > tf.nfkb.bed
+cat tf.bed | awk -F "\t" '{if ($4 == "NFKB") {print $0}}' tf.bed  > tf.nfkb.bed
 
 wc -l tf.nfkb.bed
 echo '--- First 10 lines ---'
@@ -28,7 +29,7 @@ tail tf.nfkb.bed
 
 ## Exercise 2
 
-cat gencode.v19.annotation.chr22.gtf | awk '{if($3 == "transcript")print}' > gencode.v19.annotation.chr22.transcript.gtf
+cat gencode.v19.annotation.chr22.gtf | awk -F "\t" '{if($3 == "transcript"){print $0}}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf
 
 wc -l gencode.v19.annotation.chr22.transcript.gtf
 echo '--- First 10 lines ---'
@@ -53,7 +54,6 @@ echo '--- Last 10 lines ---'
 tail gencode.v19.annotation.chr22.transcript.promoter.gtf
 
 ## Exercise 4
-
 
 bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed > gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 
