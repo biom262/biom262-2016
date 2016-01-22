@@ -1,7 +1,7 @@
 #Homework 1
 #Anupriya Tripathi
 
-echo "echo "Hello I am a message in standard out (stdout)" 
+echo "Hello I am a message in standard out (stdout)" 
 echo "Hello I am a message in standard error (stderr) >&2"
 
 #Ex 1
