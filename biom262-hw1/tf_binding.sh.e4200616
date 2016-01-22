@@ -1,0 +1,2 @@
+/var/spool/torque/mom_priv/jobs/4200616.tscc-mgr.local.SC: line 4: syntax error near unexpected token `('
+/var/spool/torque/mom_priv/jobs/4200616.tscc-mgr.local.SC: line 4: `echo "echo "Hello I am a message in standard out (stdout)" '
