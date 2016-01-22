@@ -15,7 +15,7 @@ echo "Hello I am a message in standard error (stderr) >&2"
 
 #Ex 1
 #Extracting the sites where NFKB binds
-#cd ~/code/biom262-2016/weeks/week01/data
+cd ~/code/biom262-2016/weeks/week01/data
 awk '$4=="NFKB" {print; }' tf.bed >tf.nfkb.bed
 wc -l tf.nfkb.bed
 echo '--- First 10 lines ---'
@@ -27,7 +27,7 @@ tail tf.nfkb.bed
 
 #Ex2
 #Finding all the transcrips from Chromosome 22 annotated file
-#cd ~/code/biom262-2016/weeks/week01/data
+cd ~/code/biom262-2016/weeks/week01/data
 awk '$3=="transcript" {print; }' gencode.v19.annotation.chr22.gtf> gencode.v19.annotation.chr22.transcript.gtf
 wc -l gencode.v19.annotation.chr22.transcript.gtf
 echo '--- First 10 lines ---'
@@ -39,7 +39,7 @@ tail gencode.v19.annotation.chr22.transcript.gtf
 
 #Ex3
 #Extracting promoter regions of chromosome 22 transcripts
-#cd ~/code/biom262-2016/weeks/week01/data
+cd ~/code/biom262-2016/weeks/week01/data
 module load biotools
 bedtools flank -l 2000 -r 0 -s -i gencode.v19.annotation.chr22.transcript.gtf -g hg19.genome> gencode.v19.annotation.chr22.transcript.promoter.gtf
 wc -l gencode.v19.annotation.chr22.transcript.promoter.gtf
@@ -52,7 +52,7 @@ tail gencode.v19.annotation.chr22.transcript.promoter.gtf
 
 #Ex4
 #Checking if there is overlap between NFKB binding sites and promoter regions in chromosome 22
-#cd ~/code/biom262-2016/weeks/week01/data
+cd ~/code/biom262-2016/weeks/week01/data
 module load biotools
 bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf.nfkb.bed> gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 wc -l gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
@@ -65,7 +65,7 @@ tail gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
 
 #Ex5
 #Producing sequence for the overlap regions between NFKB binding sites and chr22 promoter regions
-#cd ~/code/biom262-2016/weeks/week01/data
+cd ~/code/biom262-2016/weeks/week01/data
 module load biotools
 bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf -s -fo gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
 wc -l gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
