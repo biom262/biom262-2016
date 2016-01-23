@@ -1,3 +1,4 @@
-This repository is for submitting HW-1
+This repository is for submitting HW-1 by Anupriya Tripathi
 
--Anupriya Tripathi
+Important link: http://betterexplained.com/articles/aha-moments-when-learning-git/
+
