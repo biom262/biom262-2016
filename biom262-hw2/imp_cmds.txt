@@ -1,0 +1,22 @@
+goof link about interpretting regression model:http://blog.minitab.com/blog/adventures-in-statistics/how-to-interpret-regression-analysis-results-p-values-and-coefficients
+
+reg.data<-read.csv("xyz.csv")
+plot(reg.data$tannin,reg.data$growth,pch=21,bg="blue",asp=1,xlab="tannin content",ylab="growth")
+lm() #model prediction-regression line 
+abline(lm()) #plotting the regession line
+predict(lm())-> variabe #storing the regression line values
+
+SSE??
+
+residual= y[i]-mean(y)- var[i](x[i]-mean(x[i])
+SSE=residual^2
+
+model <-lm()
+summary(model) #gives all parameters including R^2 of the predicted model
+abline() for making a horizontal line at a given height
+
+1. Fit linear model
+2. Tranform co-ordinates to make linear model (log)
+3. Non-linear model- sometimes it is not possible to transform data into a linear model (nls())
+
+To make transformations to log scale, make y axis log and plot the linear curve. log(y)=coeff1+coeff2*x. Not make y the subject using these coefficients and plot that formula vs an arbitary range of x.
