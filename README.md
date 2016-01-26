@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/biom262/biom262-2016.svg?branch=master)](https://travis-ci.org/biom262/biom262-2016) [![Join the chat at https://gitter.im/biom262/biom262-2016](https://badges.gitter.im/biom262/biom262-2016.svg)](https://gitter.im/biom262/biom262-2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
@@ -43,3 +44,10 @@ git remote add upstream https://github.com/biom262/biom262-2016
 ```
 
 ***Note: you will still need to create  a branch named after the week***
+=======
+# biom262-hw1
+
+This homework covers the basics of Unix commands, TSCC usage, and data access and analysis.
+
+Exercises included in this assignment provide practice for analyzing NFKB binding sites and large datasets.
+>>>>>>> 8cdeb21dd341f221b92a1b0df87e01c1d06f2c14
