@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -q hotel
+#PBS -N featcounts
+#PBS -l nodes=1:ppn=8
+#PBS -l walltime=1:00:00
+#PBS -e featcounts.err
+#PBS -o featcounts.out
+#PBS -V
+#PBS -M e1pierce@ucsd.edu
+
+featureCounts -T 8 \
+    -s -B --primary \
+    -a /projects/ps-yeolab/biom262-2016/genomes/mm10/gencode/m8/gencode.vM8.basic.annotation.gtf \
+    -o ~/projects/shalek2013/processed_data/s10_featureCounts.txt \
