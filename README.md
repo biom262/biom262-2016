@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/biom262/biom262-2016.svg?branch=master)](https://travis-ci.org/biom262/biom262-2016) [![Join the chat at https://gitter.im/biom262/biom262-2016](https://badges.gitter.im/biom262/biom262-2016.svg)](https://gitter.im/biom262/biom262-2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-# Quantitative Methods in Genetics and Genomics
+# Quantitative Methods in Genetics and Genomics 2016
 
 
 
