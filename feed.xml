@@ -55,15 +55,15 @@ Winter 2016</description>
     └── articles.coffee       &amp;lt;- view that lists articles
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Articles are sorted by date and 3 are shown per page, you can configure this and more in config.json. Check paginator.coffee for all options related to pagination, most plugins also have their own options.&lt;/p&gt;
 &lt;h3 id=&quot;a-typical-article&quot;&gt;A typical article&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-markdown&quot;&gt;&lt;span class=&quot;horizontal_rule&quot;&gt;---&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-markdown&quot;&gt;---
 title: Hear me blog
 author: johndoe
-&lt;span class=&quot;header&quot;&gt;date: 2012-12-12 12:12
+&lt;span class=&quot;section&quot;&gt;date: 2012-12-12 12:12
 ---&lt;/span&gt;
 
 This will be shown as the article excerpt.
 
-&lt;span class=&quot;header&quot;&gt;## A h2, hr or &amp;lt;span class=&quot;more&quot;&amp;gt; marks where the intro cuts off&lt;/span&gt;
+&lt;span class=&quot;section&quot;&gt;## A h2, hr or &amp;lt;span class=&quot;more&quot;&amp;gt; marks where the intro cuts off&lt;/span&gt;
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -124,21 +124,21 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 &lt;h3 id=&quot;coffeescript&quot;&gt;CoffeeScript&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-coffeescript&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Animal&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;comment&quot;&gt;### Intellegent design ###&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;getDNA&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
+  getDNA: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'sequencing...'&lt;/span&gt;
     &lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;
       sleep &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;
 
 &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Monkey&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Animal&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
+  speak: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'ah ah ah'&lt;/span&gt;
 
 &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Human&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Monkey&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;attribute&quot;&gt;speak&lt;/span&gt;: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
+  speak: &lt;span class=&quot;function&quot;&gt;-&amp;gt;&lt;/span&gt;
     &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; [&lt;span class=&quot;string&quot;&gt;'yolo'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;] + [&lt;span class=&quot;string&quot;&gt;'swag'&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; i % &lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; [&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.100&lt;/span&gt;]
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-c&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
 &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt;)&lt;/span&gt;
 &lt;/span&gt;{
@@ -147,11 +147,11 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;c-&quot;&gt;C++&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-cpp&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#&lt;span class=&quot;keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-cpp&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
 &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;
 &lt;/span&gt;{
-  &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::endl;
+  &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;
   &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -184,7 +184,7 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;objectivec&quot;&gt;ObjectiveC&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-objectivec&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;#import &lt;span class=&quot;title&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-objectivec&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#import &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;/span&gt;
 
 &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; main(&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt;)
 {
@@ -193,7 +193,7 @@ The theme used is tomorrow, you can find more themes &lt;a href=&quot;http://jmb
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;php&quot;&gt;PHP&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&quot;lang-php&quot;&gt;&lt;span class=&quot;preprocessor&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'Hello, world'&lt;/span&gt;; &lt;span class=&quot;preprocessor&quot;&gt;?&amp;gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-php&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;'Hello, world'&lt;/span&gt;; &lt;span class=&quot;meta&quot;&gt;?&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
 &lt;pre&gt;&lt;code class=&quot;lang-python&quot;&gt;print(&lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;)
