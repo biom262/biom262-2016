@@ -1,0 +1,65 @@
+# Files:
+hapmap1.ped - sample + binary phenotype + genotype information
+hapmap1.map - marker information
+pop.phe - population information for samples
+qt.phe = quantitative phenotype information
+dt.phe = discrete phenotype information
+
+# First convert plink ped / map into plink binary format
+plink --file hapmap1 --make-bed --out hapmap2
+
+# Should now have hapmap2.bed, hapmap2.bim, hapmap2.fam
+
+# Next generate a genetic relationship matrix using gcta
+gcta64 --bfile hapmap2 --autosome --maf 0.01 --make-grm --out test
+
+# Filter out any individuals that are related
+gcta64 --grm test --grm-cutoff 0.025 --make-grm --out test_rm025
+
+# How many related samples were removed?
+
+# Estimate heritability for discrete phenotype
+gcta64 --grm test --pheno dt.phe --reml --prevalence 0.1 --out test
+
+# Do the results look believable?
+# Maybe population substructure is influencing the outcome
+
+# Use PCA to quantify variance due to substructure
+gcta64 --grm test --pca 20  --out test
+
+# Now estimate the variance explained by all SNPs controlling for population substructure with the 1st 20 PCs
+gcta64 --reml --grm test --pheno dt.phe --prevalence 0.1 --qcovar test.eigenvec --out test
+
+# Alternatively, since we know the populations, we can include them as a discrete covariate
+gcta64 --reml --grm test --pheno dt.phe --prevalence 0.1 --covar pop.phe --out test
+
+# We can also look at the quantitative trait value
+gcta64 --reml --grm test --pheno qt.phe --covar pop.phe --out testqt
+
+# Using GCTA we don't see much evidence that genotype explains phenotype
+# Can we detect any kind of association?
+
+gcta64 --mlma --bfile hapmap2 --grm test --pheno dt.phe --out test
+awk '{if ($9 < 0.05) print $0}' test.mlma > test.mlma.results
+wc -l test.mlma
+wc -l test.mlma.results
+sort -gk 9 test.mlma.results > test.mlma.results.sorted
+head test.mlma.results.sorted
+
+# Now lets control for population substructure
+gcta64 --mlma --bfile hapmap2 --grm test --pheno dt.phe --covar pop.phe --out test
+awk '{if ($9 < 0.05) print $0}' test.mlma > test.mlma.results
+wc -l test.mlma
+wc -l test.mlma.results
+sort -gk 9 test.mlma.results > test.mlma.results.sorted
+head test.mlma.results.sorted
+
+# Do you observe the spiked in marker in the results? rs2222162
+# Is there difference in the test results when you include population as a discrete covariate? Why or why not?
+
+
+# Finally, why wasn't GCTA powered to detect a genetic contribution underlying the spiked in phenotype?
+# Visit the following URL to detrmine power to detect heritability given the size of the dataset
+# http://spark.rstudio.com/ctgg/gctaPower/
+
+# In general, what would you expect to see when running GCTA on an artificial phenotype with a single spiked in causal variant?
