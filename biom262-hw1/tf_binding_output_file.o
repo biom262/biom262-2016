@@ -1,0 +1,13 @@
+Number of lines for the following working files (stdout)
+  702 tf.nfkb.bed
+  702 total
+   4459 gencode.v19.annotation.chr22.transcript.gtf
+   4459 total
+   4459 gencode.v19.annotation.chr22.transcript.promoter.gtf
+   4459 total
+  1221 gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf
+  1221 total
+  2442 gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
+  2442 total
+ Hello I am a message in standard out (stdout)
+Nodes:        tscc-0-20
