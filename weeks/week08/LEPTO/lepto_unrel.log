@@ -1,0 +1,47 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Skipping web check... [ --noweb ] 
+Writing this text to log file [ lepto_unrel.log ]
+Analysis started: Wed Feb 24 15:18:36 2016
+
+Options in effect:
+	--noweb
+	--bfile lepto_pruned
+	--genome
+	--out lepto_unrel
+
+Reading map (extended format) from [ lepto_pruned.bim ] 
+26178 markers to be included from [ lepto_pruned.bim ]
+Reading pedigree information from [ lepto_pruned.fam ] 
+266 individuals read from [ lepto_pruned.fam ] 
+266 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+182 cases, 84 controls and 0 missing
+214 males, 52 females, and 0 of unspecified sex
+Reading genotype bitfile from [ lepto_pruned.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Before frequency and genotyping pruning, there are 26178 SNPs
+266 founders and 0 non-founders found
+1425 heterozygous haploid genotypes; set to missing
+Writing list of heterozygous haploid genotypes to [ lepto_unrel.hh ]
+Total genotyping rate in remaining individuals is 0.997136
+0 SNPs failed missingness test ( GENO > 1 )
+0 SNPs failed frequency test ( MAF < 0 )
+After frequency and genotyping pruning, there are 26178 SNPs
+After filtering, 182 cases, 84 controls and 0 missing
+After filtering, 214 males, 52 females, and 0 of unspecified sex
+Converting data to Individual-major format
+Writing whole genome IBS/IBD information to [ lepto_unrel.genome ] 
+Filtering output to include pairs with ( 0 <= PI-HAT <= 1 )
+
+Analysis finished: Wed Feb 24 15:19:16 2016
+
