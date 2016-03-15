@@ -1,0 +1,59 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Skipping web check... [ --noweb ] 
+Writing this text to log file [ m2.log ]
+Analysis started: Tue Mar 15 03:12:36 2016
+
+Options in effect:
+	--noweb
+	--bfile m1
+	--bmerge lepto_selected_chr_21.bed lepto_selected_chr_21.bim lepto_selected_chr_21.fam
+	--make-bed
+	--out m2
+
+Reading map (extended format) from [ m1.bim ] 
+8872 markers to be included from [ m1.bim ]
+Reading pedigree information from [ m1.fam ] 
+266 individuals read from [ m1.fam ] 
+266 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+182 cases, 84 controls and 0 missing
+214 males, 52 females, and 0 of unspecified sex
+Reading genotype bitfile from [ m1.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Using merge mode 1 : consensus call (default)
+
+1718 markers to be merged from [ lepto_selected_chr_21.bim ]
+Of these, 1718 are new, 0 already exist in current data
+266 individuals merged from [ lepto_selected_chr_21.fam ] 
+Of these, 0 were new, 266 were already in current data
+
+Detected that binary PED file is v1.00 SNP-major mode
+266 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+182 cases and 84 controls
+Before frequency and genotyping pruning, there are 10590 SNPs
+266 founders and 0 non-founders found
+Total genotyping rate in remaining individuals is 0.997589
+0 SNPs failed missingness test ( GENO > 1 )
+0 SNPs failed frequency test ( MAF < 0 )
+After frequency and genotyping pruning, there are 10590 SNPs
+After filtering, 182 cases, 84 controls and 0 missing
+After filtering, 214 males, 52 females, and 0 of unspecified sex
+Writing pedigree information to [ m2.fam ] 
+Writing map (extended format) information to [ m2.bim ] 
+Writing genotype bitfile to [ m2.bed ] 
+Using (default) SNP-major mode
+
+Analysis finished: Tue Mar 15 03:12:37 2016
+

@@ -1,0 +1,43 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Recent cached web-check found...Problem connecting to web
+
+Writing this text to log file [ plink.log ]
+Analysis started: Tue Mar 15 03:13:54 2016
+
+Options in effect:
+	--bfile lepto_selected_chr_pruned
+	--assoc
+
+Reading map (extended format) from [ lepto_selected_chr_pruned.bim ] 
+3107 markers to be included from [ lepto_selected_chr_pruned.bim ]
+Reading pedigree information from [ lepto_selected_chr_pruned.fam ] 
+266 individuals read from [ lepto_selected_chr_pruned.fam ] 
+266 individuals with nonmissing phenotypes
+Assuming a disease phenotype (1=unaff, 2=aff, 0=miss)
+Missing phenotype value is also -9
+182 cases, 84 controls and 0 missing
+214 males, 52 females, and 0 of unspecified sex
+Reading genotype bitfile from [ lepto_selected_chr_pruned.bed ] 
+Detected that binary PED file is v1.00 SNP-major mode
+Before frequency and genotyping pruning, there are 3107 SNPs
+266 founders and 0 non-founders found
+Total genotyping rate in remaining individuals is 0.997332
+0 SNPs failed missingness test ( GENO > 1 )
+0 SNPs failed frequency test ( MAF < 0 )
+After frequency and genotyping pruning, there are 3107 SNPs
+After filtering, 182 cases, 84 controls and 0 missing
+After filtering, 214 males, 52 females, and 0 of unspecified sex
+Writing main association results to [ plink.assoc ] 
+
+Analysis finished: Tue Mar 15 03:13:54 2016
+
